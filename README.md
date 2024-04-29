@@ -9,3 +9,6 @@ This Test Automation Framework is created using Java  + RestAssured , which can 
 2.Java JDK-1.8 or higher
 3.Apache Maven 3 or higher
 
+java/tests contain the solutions which can be executed seperately 
+The resources are saved in the resources folder which as the schema details and other input parameters required.
+
