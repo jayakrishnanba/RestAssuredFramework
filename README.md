@@ -1,6 +1,6 @@
 # RestAssuredFramework
 
-This Test Automation Framework is created using Java + TestNG + RestAssured + ExtentReports, which can be used across different api based applications.
+This Test Automation Framework is created using Java  + RestAssured + Cucumber, which can be used across different api based applications. The framework is implemented using a BDD Based approach
 
 **Pre-Requisites**
 IntelliJ or Eclipse
