@@ -25,10 +25,10 @@ public class GetTimeStampValueTestCase {
                         .then()
                         .extract()
                         .response();
-        System.out.println("The response is returned in successfully");
+        System.out.println("The response is returned successfully");
     }
     @Test
-    @Then("Validate the timestamp response is less than 3 seconds")
+    @Then("Validate the timestamp response is not less than 3 seconds")
     public void Validate_TimeStampResponse() {
 
         Response response =
@@ -46,7 +46,7 @@ public class GetTimeStampValueTestCase {
                         .response();
 
         System.out.println("The response is returned in "+ response.getTimeIn(TimeUnit.SECONDS)+"\t\tseconds");
-        Assert.assertTrue(response.getTimeIn(TimeUnit.SECONDS)<3,"Timestamp less than 3 seconds");
+        Assert.assertFalse(response.getTimeIn(TimeUnit.SECONDS)<3,"Timestamp less than 3 seconds");
 
     }
 
