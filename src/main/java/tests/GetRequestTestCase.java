@@ -11,7 +11,7 @@ public class GetRequestTestCase
 {
 
     @Test
-    public void getAllBookings() {
+    public void getRequestValidation() {
 
         Response response =
                 RestAssured

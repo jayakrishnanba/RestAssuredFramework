@@ -30,13 +30,13 @@ public class GetAEDValueTestCase {
 
 
         Assert.assertTrue(response.getBody().asString().contains("success"));
-        HashMap<String, Double> firstName = JsonPath.read(response.body().asString(), "$.rates");
-        System.out.println(firstName);
+        HashMap<String, Double> rates = JsonPath.read(response.body().asString(), "$.rates");
+        System.out.println(rates);
 
 
-            if(firstName.containsKey("AED"))
+            if(rates.containsKey("AED"))
             {
-               Double f = firstName.get("AED");
+               Double f = rates.get("AED");
                System.out.println(f);
             }
 

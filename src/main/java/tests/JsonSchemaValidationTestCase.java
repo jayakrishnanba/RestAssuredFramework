@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 public class JsonSchemaValidationTestCase
 {
     @Test
-    public void testGetBookingJsonSchema() {
+    public void testGetJsonSchemaValidation() {
 
         InputStream getBookingJsonSchema = getClass().getClassLoader()
                 .getResourceAsStream("response.json");
