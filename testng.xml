@@ -6,8 +6,10 @@
     </listeners>
     <test thread-count="5" name="Test">
         <classes>
+            <class name="tests.GetAEDValueTestCase"/>
             <class name="tests.GetRequestTestCase"/>
-
+            <class name="tests.GetTimeStampValueTestCase"/>
+            <class name="tests.JsonSchemaValidationTestCase"/>
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->
