@@ -1,34 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="5015" started-at="2024-04-30T11:58:56 IST" finished-at="2024-04-30T11:59:01 IST">
+  <suite name="Suite" duration-ms="5516" started-at="2024-04-30T16:55:15 IST" finished-at="2024-04-30T16:55:21 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="5015" started-at="2024-04-30T11:58:56 IST" finished-at="2024-04-30T11:59:01 IST">
+    <test name="Test" duration-ms="5516" started-at="2024-04-30T16:55:15 IST" finished-at="2024-04-30T16:55:21 IST">
       <class name="tests.GetRequestTestCase">
-        <test-method status="PASS" signature="getRequestValidation()[pri:0, instance:tests.GetRequestTestCase@52719fb6]" name="getRequestValidation" duration-ms="353" started-at="2024-04-30T11:58:58 IST" finished-at="2024-04-30T11:58:59 IST">
+        <test-method status="PASS" signature="Validate_getRequest_Success_Validation()[pri:0, instance:tests.GetRequestTestCase@f78a47e]" name="Validate_getRequest_Success_Validation" duration-ms="339" started-at="2024-04-30T16:55:18 IST" finished-at="2024-04-30T16:55:19 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getRequestValidation -->
+        </test-method> <!-- Validate_getRequest_Success_Validation -->
       </class> <!-- tests.GetRequestTestCase -->
       <class name="tests.GetTimeStampValueTestCase">
-        <test-method status="PASS" signature="getTimeStampResponse()[pri:0, instance:tests.GetTimeStampValueTestCase@3012646b]" name="getTimeStampResponse" duration-ms="370" started-at="2024-04-30T11:58:59 IST" finished-at="2024-04-30T11:58:59 IST">
+        <test-method status="PASS" signature="Validate_TimeStampResponse()[pri:0, instance:tests.GetTimeStampValueTestCase@644baf4a]" name="Validate_TimeStampResponse" duration-ms="351" started-at="2024-04-30T16:55:19 IST" finished-at="2024-04-30T16:55:19 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getTimeStampResponse -->
+        </test-method> <!-- Validate_TimeStampResponse -->
       </class> <!-- tests.GetTimeStampValueTestCase -->
       <class name="tests.GetAEDValueTestCase">
-        <test-method status="PASS" signature="getAEDConversionRates()[pri:0, instance:tests.GetAEDValueTestCase@121314f7]" name="getAEDConversionRates" duration-ms="2750" started-at="2024-04-30T11:58:56 IST" finished-at="2024-04-30T11:58:58 IST">
+        <test-method status="PASS" signature="ValidateAPISuccess_returnsValidPrice()[pri:0, instance:tests.GetAEDValueTestCase@2892d68]" name="ValidateAPISuccess_returnsValidPrice" duration-ms="2887" started-at="2024-04-30T16:55:15 IST" finished-at="2024-04-30T16:55:18 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getAEDConversionRates -->
+        </test-method> <!-- ValidateAPISuccess_returnsValidPrice -->
+        <test-method status="PASS" signature="Validate_aedValue()[pri:0, instance:tests.GetAEDValueTestCase@2892d68]" name="Validate_aedValue" duration-ms="336" started-at="2024-04-30T16:55:18 IST" finished-at="2024-04-30T16:55:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_aedValue -->
       </class> <!-- tests.GetAEDValueTestCase -->
       <class name="tests.JsonSchemaValidationTestCase">
-        <test-method status="PASS" signature="testGetJsonSchemaValidation()[pri:0, instance:tests.JsonSchemaValidationTestCase@4a883b15]" name="testGetJsonSchemaValidation" duration-ms="1397" started-at="2024-04-30T11:58:59 IST" finished-at="2024-04-30T11:59:01 IST">
+        <test-method status="PASS" signature="validate_jsonSchema_response()[pri:0, instance:tests.JsonSchemaValidationTestCase@7526515b]" name="validate_jsonSchema_response" duration-ms="1482" started-at="2024-04-30T16:55:19 IST" finished-at="2024-04-30T16:55:21 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testGetJsonSchemaValidation -->
+        </test-method> <!-- validate_jsonSchema_response -->
       </class> <!-- tests.JsonSchemaValidationTestCase -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
