@@ -10,11 +10,9 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 		}
 		,features= {"src/main/java/Features"}
 		,glue = {"stepDef"}
-		//,dryRun = true
 		,monochrome = true
-		,snippets = SnippetType.CAMELCASE
 		,tags = "@smokeTest"
-		//,publish = true
+
 		)
 public class TestRunner {
 
