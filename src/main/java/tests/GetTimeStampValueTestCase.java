@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 import java.util.concurrent.TimeUnit;
 
 public class GetTimeStampValueTestCase {
+
     @Test
     public void Validate_TimeStampResponse() {
 
