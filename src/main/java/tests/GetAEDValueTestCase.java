@@ -9,9 +9,11 @@ import org.testng.annotations.Test;
 
 import java.util.HashMap;
 
+// API call is successful and returns valid price.
 public class GetAEDValueTestCase {
+    public HashMap<String, Double> rates;
     @Test
-    public void getAEDConversionRates() {
+    public void ValidateAPISuccess_returnsValidPrice() {
 
         Response response =
                 RestAssured
@@ -22,6 +24,7 @@ public class GetAEDValueTestCase {
                         .get()
                         .then()
                         .assertThat()
+                        // Validates the status
                         .statusCode(200)
                         .statusLine("HTTP/1.1 200 OK")
 
@@ -29,17 +32,40 @@ public class GetAEDValueTestCase {
                         .response();
 
 
-        Assert.assertTrue(response.getBody().asString().contains("success"));
+        Assert.assertTrue(response.getBody().asString().contains("success"), "Validated the success message from response");
         HashMap<String, Double> rates = JsonPath.read(response.body().asString(), "$.rates");
+        // Validates the valid price are returned
+        System.out.println("Response : Returns valid rates for the corresponding to dollar rates");
         System.out.println(rates);
 
+    } //Validates the AED Value of the corresponding dollar value
+    @Test
+    public void Validate_aedValue()
+        {
+            Response response =
+                    RestAssured
+                            .given()
+                            .contentType(ContentType.JSON)
+                            .baseUri("http://open.er-api.com/v6/latest/USD")
+                            .when()
+                            .get()
+                            .then()
+                            .assertThat()
+                            // Validates the status
+                            .statusCode(200)
+                            .statusLine("HTTP/1.1 200 OK")
 
-            if(rates.containsKey("AED"))
-            {
-               Double f = rates.get("AED");
-               System.out.println(f);
+                            .extract()
+                            .response();
+
+            HashMap<String, Double> rates = JsonPath.read(response.body().asString(), "$.rates");
+            if (rates.containsKey("AED")) {
+                Double f = rates.get("AED");
+                System.out.println("Response : Returns valid rates for AED for  the corresponding dollar rates");
+
+                System.out.println(f);
             }
 
-
+        }
     }
-}
+

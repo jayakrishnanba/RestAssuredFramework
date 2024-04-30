@@ -11,7 +11,7 @@ public class GetRequestTestCase
 {
 
     @Test
-    public void getRequestValidation() {
+    public void Validate_getRequest_Success_Validation() {
 
         Response response =
                 RestAssured

@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 
 public class GetTimeStampValueTestCase {
     @Test
-    public void getTimeStampResponse() {
+    public void Validate_TimeStampResponse() {
 
         Response response =
                 RestAssured
@@ -28,7 +28,7 @@ public class GetTimeStampValueTestCase {
                         .response();
 
 
-        System.out.println(response.getTimeIn(TimeUnit.SECONDS));
+        System.out.println("The response is returned in "+ response.getTimeIn(TimeUnit.SECONDS)+"\t\tseconds");
         Assert.assertTrue(response.getTimeIn(TimeUnit.SECONDS)<3,"Timestamp less than 3 seconds");
 
     }

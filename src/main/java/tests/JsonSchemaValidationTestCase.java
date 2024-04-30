@@ -8,11 +8,11 @@ import io.restassured.http.ContentType;
 import io.restassured.module.jsv.JsonSchemaValidator;
 import org.testng.annotations.Test;
 
-
+// Validate the json schema of the response
 public class JsonSchemaValidationTestCase
 {
     @Test
-    public void testGetJsonSchemaValidation() {
+    public void validate_jsonSchema_response() {
 
         InputStream getBookingJsonSchema = getClass().getClassLoader()
                 .getResourceAsStream("response.json");
@@ -30,5 +30,7 @@ public class JsonSchemaValidationTestCase
                 .statusCode(200)
                 .assertThat()
                     .body(JsonSchemaValidator.matchesJsonSchema(getBookingJsonSchema));
+                System.out.println("Validated the json schema of the response successfully");
     }
+
 }
