@@ -1,17 +1,18 @@
+# RestAssuredFramework
 
-**REST API Test Automation Framework**
-
-This Test Automation Framework is created using Java  + RestAssured + TestNG , which can be used across different api based applications. In this approach, the endeavor is to wrap the common requirements of API's for specific application within the wrapper class in order to test the API's without spending any extra efforts on common requirements
+This Test Automation Framework is created using Java  + RestAssured + Cucumber, which can be used across different api based applications. The framework is implemented using a BDD Based approach
 
 **Pre-Requisites**
+IntelliJ or Eclipse
 
-1.IntelliJ or Eclipse
-2.Java JDK-1.8 or higher
-3.Apache Maven 3 or higher
+Java JDK-1.8 or higher
 
-java/tests contain the solutions which can be executed seperately 
-The resources are saved in the resources folder which as the schema details and other input parameters required.
+Apache Maven 3 or higher
 
 **Execute the Tests**
-Execution can be trigerred by running the testNG.xml file
 
+Execute the TestRunner.java class in the /src/main/java folder 
+
+**Reports**
+
+Reports are generated in the /target/cucumber-report folder
