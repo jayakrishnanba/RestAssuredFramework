@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="5015" started-at="2024-04-30T11:58:56 IST" finished-at="2024-04-30T11:59:01 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="5015" started-at="2024-04-30T11:58:56 IST" finished-at="2024-04-30T11:59:01 IST">
+      <class name="tests.GetRequestTestCase">
+        <test-method status="PASS" signature="getRequestValidation()[pri:0, instance:tests.GetRequestTestCase@52719fb6]" name="getRequestValidation" duration-ms="353" started-at="2024-04-30T11:58:58 IST" finished-at="2024-04-30T11:58:59 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRequestValidation -->
+      </class> <!-- tests.GetRequestTestCase -->
+      <class name="tests.GetTimeStampValueTestCase">
+        <test-method status="PASS" signature="getTimeStampResponse()[pri:0, instance:tests.GetTimeStampValueTestCase@3012646b]" name="getTimeStampResponse" duration-ms="370" started-at="2024-04-30T11:58:59 IST" finished-at="2024-04-30T11:58:59 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTimeStampResponse -->
+      </class> <!-- tests.GetTimeStampValueTestCase -->
+      <class name="tests.GetAEDValueTestCase">
+        <test-method status="PASS" signature="getAEDConversionRates()[pri:0, instance:tests.GetAEDValueTestCase@121314f7]" name="getAEDConversionRates" duration-ms="2750" started-at="2024-04-30T11:58:56 IST" finished-at="2024-04-30T11:58:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAEDConversionRates -->
+      </class> <!-- tests.GetAEDValueTestCase -->
+      <class name="tests.JsonSchemaValidationTestCase">
+        <test-method status="PASS" signature="testGetJsonSchemaValidation()[pri:0, instance:tests.JsonSchemaValidationTestCase@4a883b15]" name="testGetJsonSchemaValidation" duration-ms="1397" started-at="2024-04-30T11:58:59 IST" finished-at="2024-04-30T11:59:01 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetJsonSchemaValidation -->
+      </class> <!-- tests.JsonSchemaValidationTestCase -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
