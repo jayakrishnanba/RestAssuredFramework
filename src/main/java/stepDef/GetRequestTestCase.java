@@ -1,6 +1,7 @@
 package stepDef;
 
 
+import io.cucumber.java.en.When;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
@@ -11,6 +12,7 @@ public class GetRequestTestCase
 {
 
     @Test
+    @When("user enters request")
     public void Validate_getRequest_Success_Validation() {
 
         Response response =

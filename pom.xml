@@ -112,13 +112,22 @@
       <groupId>info.cukes</groupId>
       <artifactId>cucumber-java</artifactId>
       <version>1.2.0</version>
-      <scope>test</scope>
     </dependency>
 
     <dependency>
       <groupId>info.cukes</groupId>
       <artifactId>cucumber-junit</artifactId>
       <version>1.2.0</version>
+    </dependency>
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-java</artifactId>
+      <version>7.17.0</version>
+    </dependency>
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-junit</artifactId>
+      <version>7.17.0</version>
     </dependency>
 
 
