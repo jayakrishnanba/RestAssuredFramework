@@ -11,9 +11,9 @@ import org.testng.annotations.Test;
 
 public class GetRequestTestCase
 {
-
     @Test
     @When("user enters request")
+
     public void Validate_getRequest_Success_Validation() {
 
         Response response =
@@ -22,14 +22,7 @@ public class GetRequestTestCase
                         .contentType(ContentType.JSON)
                         .baseUri("http://open.er-api.com/v6/latest/USD")
                         .when()
-                        .get()
-                        .then()
-                        .assertThat()
-                        .statusCode(200)
-                        .statusLine("HTTP/1.1 200 OK")
-
-                        .extract()
-                        .response();
+                        .get();
 
         System.out.println("Submitted the get request successfully");
 

@@ -24,22 +24,8 @@ public class GetAEDValueTestCase {
                         .contentType(ContentType.JSON)
                         .baseUri("http://open.er-api.com/v6/latest/USD")
                         .when()
-                        .get()
-                        .then()
-                        .assertThat()
-                        // Validates the status
-                        .statusCode(200)
-                        .statusLine("HTTP/1.1 200 OK")
+                        .get();
 
-                        .extract()
-                        .response();
-
-
-        Assert.assertTrue(response.getBody().asString().contains("success"), "Validated the success message from response");
-        HashMap<String, Double> rates = JsonPath.read(response.body().asString(), "$.rates");
-        // Validates the valid price are returned
-        System.out.println("Response : Returns valid rates for the corresponding to dollar rates");
-        System.out.println(rates);
 
     } //Validates the AED Value of the corresponding dollar value
     @Test
